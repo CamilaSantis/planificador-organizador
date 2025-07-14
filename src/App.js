@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import Categorias from "./components/Categorias";
+import Carrusel from "./components/Carrusel";
+import ProductosSugeridos from "./components/ProductosSugeridos";
+import RegistroForm from "./components/registroform.jsx";
+import ContactoForm from "./components/ContactoForm";
+import Carrito from "./components/Carrito";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <SearchBar />
+      <main>
+        <Categorias />
+        <Carrusel />
+        <ProductosSugeridos />
+        <RegistroForm />
+        <ContactoForm />
+      </main>
+      <Carrito />
+    </>
   );
 }
 
 export default App;
+
+
