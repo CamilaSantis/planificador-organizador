@@ -8,10 +8,10 @@ import RegistroForm from "./components/registroform.jsx";
 import ContactoForm from "./components/contactoform.jsx";
 import Carrito from "./components/carrito.jsx";
 import ListaProductos from "./components/ListaProductos.jsx";
-import data from "./data/productos.js";
+import { productos as data } from "./data/productos.js";
 
 function App() {
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("pan");
   const [carrito, setCarrito] = useState([]);
 
   const productosFiltrados = categoriaSeleccionada
@@ -39,12 +39,10 @@ function App() {
       <main>
         <Categorias onSeleccionar={setCategoriaSeleccionada} />
         <Carrusel />
-        {categoriaSeleccionada && (
-          <ListaProductos
-            productos={productosFiltrados}
-            onAgregar={agregarAlCarrito}
-          />
-        )}
+        <ListaProductos
+          productos={productosFiltrados}
+          onAgregar={agregarAlCarrito}
+        />
         <ProductosSugeridos />
         <RegistroForm />
         <ContactoForm />
