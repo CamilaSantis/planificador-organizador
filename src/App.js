@@ -9,6 +9,7 @@ import RegistroForm from "./components/registroform.jsx";
 import ContactoForm from "./components/contactoform.jsx";
 import Carrito from "./components/carrito.jsx";
 import ListaProductos from "./components/ListaProductos.jsx";
+import ProductoCard from "./components/ProductoCard.jsx"; 
 
 // Datos
 import { productos as data } from "./data/productos.js";
