@@ -1,103 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Recetas de CamiKim</title>
-  <link rel="stylesheet" href="Style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recetas de CamiKim</title>
 
-<body>
+    <!-- Fuente y estilos -->
+    <link rel="stylesheet" href="/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  </head>
 
-  <header>
-    <h1>Las Delicias de CamiKim</h1>
-  </header>
-
-
- <div class="search">
-  <input type="text" id="buscador" placeholder="Busca una receta..." />
-</div>
-
-
-  <main class="container">
-
- 
-  <section id="categorias">
-    <h2>Categorías</h2>
-    <div class="botones-categorias">
-      <button onclick="mostrarProductos('fermentos')">Fermentos Líquidos</button>
-      <button onclick="mostrarProductos('pan')">Pan</button>
-      <button onclick="mostrarProductos('dulces')">Masas Dulces</button>
-      <button onclick="mostrarProductos('galletas')">Galletas</button>
-    </div>
-  </section>
-
-  <section id="carrusel-productos" class="carrusel">
-    <button id="prev-btn" aria-label="Anterior"></button>
-    <div class="carrusel-imagen">
-      <img src="" alt="Producto destacado" id="imagen-carrusel" />
-      <p id="nombre-carrusel"></p>
-    </div>
-      <button id="next-btn" aria-label="Siguiente"></button>
-  </section>
-
-  <section id="productos">
-    <h2>Productos sugeridos</h2>
-    <div id="contenedor-productos"></div>
-  </section>
-
-    <!-- Formulario de Registro -->
-    <section class="registro">
-      <h2>Regístrate para recibir nuevas recetas</h2>
-      <form id="registroForm">
-        <input type="text" id="nombreReg" placeholder="Nombre Completo" required>
-        <input type="email" id="correoReg" placeholder="Correo Electrónico" required>
-
-        <input type="text" id="telefono" placeholder="+56 9 1234 5678" required>
-        <span class="validacion" id="telefonoHint">Formato: +56 9 XXXX XXXX</span>
-
-        <input type="number" id="edad" placeholder="Edad" required>
-
-        <input type="password" id="contrasena" placeholder="Contraseña segura" required>
-        <span class="validacion" id="contrasenaHint">Mínimo 8 caracteres, 1 mayúscula, 1 minúscula y 1 número</span>
-
-        <label for="region">Región:</label>
-        <select id="region"><option value="">Seleccione Región</option></select>
-
-        <label for="comuna">Comuna:</label>
-        <select id="comuna"><option value="">Seleccione Comuna</option></select>
-
-        <button type="submit">Registrarse</button>
-      </form>
-    </section>
-
-    <!-- Formulario de contacto -->
-    <section class="contacto">
-      <h2>¿Tienes dudas? Escríbeme</h2>
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-  </main>
-    <div id="carrito" class="carrito">
-      <h3>🛒 Carrito de Compras</h3>
-      <ul id="lista-carrito"></ul>
-      <p id="total-carrito">Total: 0 productos</p>
-      <button onclick="vaciarCarrito()">Vaciar Carrito</button>
-    </div>
-    
-
-  <script src="script.js"></script>
-</body>
+  <body>
+    <noscript>Necesitas habilitar JavaScript para ver esta aplicación.</noscript>
+    <div id="root"></div> <!-- Aquí React montará tu App -->
+  </body>
 </html>
