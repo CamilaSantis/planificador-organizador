@@ -1,0 +1,26 @@
+.carrito {
+  background-color: #fffaf3;
+  border: 1px solid #f4c2c2;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(244, 194, 194, 0.3);
+  text-align: center;
+}
+
+.carrito button {
+  background-color: #f4c2c2;
+  border: none;
+  color: #5a4a42;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.carrito button:hover {
+  background-color: #dabeea;
+}
