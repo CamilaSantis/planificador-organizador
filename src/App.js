@@ -16,6 +16,10 @@ import { productos as data } from "./data/productos.js";
 function App() {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("pan");
   const [carrito, setCarrito] = useState([]);
+  const [resultadosBusqueda, setResultadosBusqueda] = useState([]);
+
+  // Todos los productos en un solo array para búsqueda
+  const todosProductos = Object.values(data).flat();
 
   // Filtrado por categoría
   const productosFiltrados = categoriaSeleccionada
@@ -24,7 +28,6 @@ function App() {
 
   // Agregar al carrito
   const agregarAlCarrito = (id) => {
-    const todosProductos = Object.values(data).flat();
     const producto = todosProductos.find((p) => p.id === id);
     if (producto) setCarrito([...carrito, producto]);
   };
@@ -42,15 +45,15 @@ function App() {
   return (
     <>
       <Header />
-      <SearchBar />
+      <SearchBar productos={todosProductos} onResultados={setResultadosBusqueda} />
 
       <main>
         <Categorias onSeleccionar={setCategoriaSeleccionada} />
         <Carrusel />
 
-        {/* Lista de productos filtrados */}
+        {/* Lista de productos filtrados por búsqueda o por categoría */}
         <ListaProductos
-          productos={productosFiltrados}
+          productos={resultadosBusqueda.length > 0 ? resultadosBusqueda : productosFiltrados}
           onAgregar={agregarAlCarrito}
         />
 
@@ -60,7 +63,7 @@ function App() {
 
       {/* Carrito de compras */}
       <Carrito
-        carrito={carrito}
+        items={carrito}
         onEliminar={eliminarDelCarrito}
         onVaciar={vaciarCarrito}
       />
