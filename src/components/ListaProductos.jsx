@@ -1,4 +1,4 @@
-import ProductoCard from './ProductoCard';
+import ProductoCard from './productossugeridos.jsx';
 
 export default function ListaProductos({ productos, onAgregar }) {
   return (
