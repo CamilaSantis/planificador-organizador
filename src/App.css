@@ -11,3 +11,19 @@
   height: auto;
   margin-bottom: 0.5rem;
 }
+
+.tarjeta-prod {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fdfdfd;
+  font-family: 'Quicksand', sans-serif;
+  max-width: 300px;
+  text-align: center;
+}
+
+.tarjeta-prod img {
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
