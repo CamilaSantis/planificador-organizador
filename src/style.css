@@ -1,0 +1,93 @@
+/* Tipografía y colores base */
+:root {
+  --bg-color: #fffaf3;
+  --header-color: #5a4a42;
+  --accent-color: #f4c2c2;
+  --font-title: 'Playfair Display', serif;
+  --font-body: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--header-color);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado principal */
+header {
+  background-color: var(--accent-color);
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--font-title);
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--header-color);
+  margin: 0;
+}
+
+/* Navegación */
+nav {
+  background-color: #e6dccd;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Sección de entradas */
+.article-card {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(244, 194, 194, 0.4);
+  border-radius: 12px;
+}
+
+.article-card h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.article-card p {
+  margin-bottom: 1rem;
+}
+
+/* Botón de receta */
+button {
+  background-color: var(--accent-color);
+  color: var(--header-color);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #dabeea;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e6dccd;
+  font-size: 0.9rem;
+}

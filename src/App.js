@@ -1,12 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
-import Categorias from "./components/Categorias";
-import Carrusel from "./components/Carrusel";
-import ProductosSugeridos from "./components/ProductosSugeridos";
+import Header from "./components/header.jsx";
+import SearchBar from "./components/searchbar.jsx";
+import Categorias from "./components/categorias.jsx";
+import Carrusel from "./components/carrusel.jsx";
+import ProductosSugeridos from "./components/productossugeridos.jsx";
 import RegistroForm from "./components/registroform.jsx";
-import ContactoForm from "./components/ContactoForm";
-import Carrito from "./components/Carrito";
+import ContactoForm from "./components/contactoform.jsx";
+import Carrito from "./components/carrito.jsx";
+
 
 function App() {
   return (
