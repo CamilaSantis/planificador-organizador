@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Carrito.css"; // Opcional para estilo modular
+import "../Style/Carrito.css"; 
 
 function Carrito() {
   const [items, setItems] = useState([]);
